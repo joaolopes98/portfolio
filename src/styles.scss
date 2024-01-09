@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600;900&display=swap');
+
+:root{
+    
+    --backgroundPrimary: #34353a;
+    --backgroundSecondary: #31333b;
+    --backgroundTertiary: #3d3e42;
+    --colorPrimary: #f6f5f6;
+    --colorSecondary: #a4a4a5;
+    --colorTertiary: #ffc86b;
+    --beigePrimary: #f5ecd8;
+    --beigeSecondary: #f0e6d5;
+    --beigeTertiary: #e6d7b6;
+}
+
+body{
+    margin: 0;   
+    font-family: 'Roboto Slab';
+}
