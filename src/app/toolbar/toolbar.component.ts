@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,10 +7,19 @@ import { Component } from '@angular/core';
 })
 export class ToolbarComponent {
 
-  selectedTopic: number = 0;
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    const element = document.getElementById('toolbar');
+    
+    if (!element) {
+      return;
+    }
 
-  selectTopic(index: number): void {
-    this.selectedTopic = index;
-    // You can perform additional actions when a topic is selected if needed
+    if (window.scrollY > 10) {
+      element.classList.add('toolbar-scrolled');
+    } else {
+      element.classList.remove('toolbar-scrolled');
+    }
   }
+  
 }
