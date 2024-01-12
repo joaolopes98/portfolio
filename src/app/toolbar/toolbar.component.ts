@@ -15,7 +15,7 @@ export class ToolbarComponent {
       return;
     }
 
-    if (window.scrollY > 10) {
+    if (window.scrollY > 450) {
       element.classList.add('toolbar-scrolled');
     } else {
       element.classList.remove('toolbar-scrolled');

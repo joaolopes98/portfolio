@@ -1,20 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;600&display=swap');
+
 
 :root{
-    
-    --backgroundPrimary: #171717;
-    --backgroundSecondary: #181818;
+    --backgroundPrimary: #34353a;
+    --backgroundSecondary: #31333b;
     --backgroundTertiary: #3d3e42;
     --colorPrimary: white;
     --colorSecondary: #a4a4a5;
-    --colorTertiary: #ffc86b;
-    --beigePrimary: #f5ecd8;
-    --beigeSecondary: #f0e6d5;
-    --beigeTertiary: #e6d7b6;
+    --colorAccent: #ffc86b;
+    --shadow: rgba(255, 255, 255, 0.1);
 }
 
 body{
     margin: 0;   
-    font-family: 'Lato';
+    font-family: 'Poppins';
 }

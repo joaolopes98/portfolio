@@ -9,49 +9,56 @@
     right: 0;
     padding: 50px 250px;
     transition: 0.75s;
+    z-index: 100;
 
-    background-color: var(--backgroundPrimary);
-    color: var(--colorPrimary);
+    background-color: var(--backgroundPrimary);    
 }
 
 .toolbar-scrolled{
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px var(--backgroundSecondary);
+    padding: 20px 100px;
+    background-color: var(--backgroundSecondary);
+    box-shadow: 0 5px 20px var(--shadow);
 
-    .logo img {
-        height: 50px;
+    .logo span {
+        opacity: 1;
+    }
+
+    .nav-links a{
+        width: 100px;
+        font-size: 18px;
     }
 }
 
 .logo {
     display: flex;
     justify-content: center;
+    width: 150px;
 
-    font-size: 5rem;
-    font-weight: 700;
-    width: 100px;
+    span{
+        opacity: 0;
+        transition: opacity 1s ease-out;
 
-    img{
-        width: auto;
-        height: 90px;
-        object-fit: cover;
-        transition: 0.75s;
+        font-family: 'Kaushan Script';
+        font-weight: 700;
+        font-size: 30px;
+        color: var(--colorAccent);
     }
 }
 
 .nav-links {
     display: flex;
+    text-align: center;
 
     a{
+        width: 140px;
         color: var(--colorSecondary);
-        font-size: 1.5rem;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 600;
         text-decoration: none;
-        transition: color 0.3s ease;
+        transition: 0.5s ;
         margin: 0px 20px;
 
-        &:hover{
-            text-decoration: underline;
+        &:hover, &:active{
             color: var(--colorPrimary);
         }
     }
