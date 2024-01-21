@@ -2,75 +2,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 
     height: 100vh;
     background-color: var(--backgroundPrimary);
 
     .introduction{
-        
-        width: 50%;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px;
 
-        .introductionText{
-            padding-left: 350px;
-            gap: 10px;
-            height: 100%;
+        span{
+            margin: 0;
+            font-size: 3rem;
+            color: var(--colorPrimary);
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-
-            span{
-                margin: 0;
-                font-weight: 600;
-                font-size: 2rem;
-                color: var(--colorPrimary);
-    
-                .myName{
-                    margin-left: 10px;
-                
-                    font-family: 'Kaushan Script';
-                    font-weight: 700;
-                    font-size: 7rem;
-                    color: var(--colorAccent);
-                }
-            }
-    
-            p{
-                margin: 0;
-                font-weight: 400;
-                font-size: 2.5rem;
-                color: var(--colorPrimary);
-            }
-    
-            a{
-                margin-top: 30px;
-
-                background-color: transparent;
-                border: 5px solid var(--colorAccent);
-                padding: 10px;
-
-                font-weight: 600;
-                font-size: 30px;
+            .myName{
+                margin-left: 10px;
+            
+                font-family: 'Kaushan Script';
+                font-weight: 700;
+                font-size: 6rem;
                 color: var(--colorAccent);
-                text-decoration: none;
             }
+        }
+
+        p{
+            margin: 0;
+            font-size: 2rem;
+            color: var(--colorPrimary);
+        }
+
+        a{
+            background-color: transparent;
+            border: 5px solid var(--colorAccent);
+            padding: 10px;
+            border-radius: 5px;
+
+            font-weight: 600;
+            font-size: 2rem;
+            color: var(--colorAccent);
+            text-decoration: none;
+            text-align: center;
         }
     }
 
-    .photo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
 
-        img {
-            margin-right: 350px;
-            height: 350px;
-            border-radius: 5px;
-            border: 5px solid var(--colorAccent);
-            box-shadow: 0 5px 20px var(--shadow);  
-        }
+
+    img {
+        height: 250px;
+        border-radius: 5px;
+        border: 5px solid var(--colorAccent);
+        box-shadow: 0 5px 20px var(--shadow);  
     }
 }
