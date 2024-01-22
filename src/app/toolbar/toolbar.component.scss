@@ -12,6 +12,45 @@
     z-index: 100;
 
     background-color: var(--backgroundPrimary);
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+    
+        a{
+            opacity: 0;
+            transition: opacity 1s ease-out;
+    
+            font-family: 'Kaushan Script';
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: var(--colorAccent);
+
+            text-decoration: none;
+            pointer-events: none; 
+            cursor: pointer;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        text-align: center;
+    
+        a{
+            width: 100px;
+            color: var(--colorSecondary);
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.5s ;
+            margin: 0px 10px;
+    
+            &:hover, &:active{
+                color: var(--colorPrimary);
+            }
+        }
+    }
 }
 
 .toolbar-scrolled{
@@ -19,8 +58,10 @@
     background-color: var(--backgroundSecondary);
     box-shadow: 0 5px 20px var(--shadow);
 
-    .logo span {
+    .logo a {
         opacity: 1;
+        pointer-events: all;
+        cursor: pointer;
     }
 
     .nav-links a{
@@ -28,39 +69,3 @@
         font-size: 1.5rem;
     }
 }
-
-.logo {
-    display: flex;
-    justify-content: center;
-    width: 150px;
-
-    span{
-        opacity: 0;
-        transition: opacity 1s ease-out;
-
-        font-family: 'Kaushan Script';
-        font-weight: 700;
-        font-size: 2.5rem;
-        color: var(--colorAccent);
-    }
-}
-
-.nav-links {
-    display: flex;
-    text-align: center;
-
-    a{
-        width: 100px;
-        color: var(--colorSecondary);
-        font-size: 1.7rem;
-        font-weight: 600;
-        text-decoration: none;
-        transition: 0.5s ;
-        margin: 0px 10px;
-
-        &:hover, &:active{
-            color: var(--colorPrimary);
-        }
-    }
-}
-  
