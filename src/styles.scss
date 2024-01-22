@@ -14,9 +14,34 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;   
     font-family: 'Poppins';
+    color: var(--colorPrimary);
+}
+
+h2{
+    font-size: 3rem;
+    margin: 0;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7% 5% 3%;
+    max-width: 1368px;
+}
+
+.about{
+    background-color: var(--backgroundSecondary);
 }
