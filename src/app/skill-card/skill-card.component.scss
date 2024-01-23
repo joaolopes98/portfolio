@@ -1,0 +1,34 @@
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--backgroundTertiary);
+    border-radius: 10px;
+    
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--colorAccent);
+        color: var(--backgroundTertiary);
+    }
+    
+
+    img{
+        height: 50px;
+        width: 50px;
+    
+        object-fit: contain;
+    }
+
+    span{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+}

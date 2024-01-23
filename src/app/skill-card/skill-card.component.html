@@ -1,0 +1,9 @@
+<div class="skill-card" (click)="openLink(this.url)">
+    <h3 *ngIf="this.name != 'Alura'">{{this.name}}</h3>
+    <img id="image"
+        src="/assets/skills/{{this.img}}"
+        alt="{{this.name}} Logo" 
+    img/>
+    <span *ngIf="this.name == 'Alura'">Check out my courses!</span>
+    
+</div>

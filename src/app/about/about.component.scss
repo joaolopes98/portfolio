@@ -1,0 +1,29 @@
+.about{
+    background-color: var(--backgroundSecondary);
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+        .container-skills{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 20px;
+    
+            .main-card{
+                width: 200px;
+                height: 200px;
+            }
+
+            .secondary-card{
+                width: 175px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+
+
