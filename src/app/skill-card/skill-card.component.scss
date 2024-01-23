@@ -14,9 +14,21 @@
     transition: 0.5s;
     cursor: pointer;
 
+    .time{
+        display: none;
+    }
+
     &:hover{
         background-color: var(--colorAccent);
         color: var(--backgroundTertiary);
+
+        .name{
+            display: none;
+        }
+
+        .time{
+            display: block;
+        }
     }
     
 

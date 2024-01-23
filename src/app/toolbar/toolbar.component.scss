@@ -44,7 +44,7 @@
             font-weight: 600;
             text-decoration: none;
             transition: 0.5s ;
-            margin: 0px 10px;
+            margin: 0px 5px;
     
             &:hover, &:active{
                 color: var(--colorPrimary);
@@ -56,7 +56,7 @@
 .toolbar-scrolled{
     padding: 15px 2%;
     background-color: var(--backgroundSecondary);
-    box-shadow: 0 5px 20px var(--shadow);
+    box-shadow: 0 5px 5px var(--shadow);
 
     .logo a {
         opacity: 1;

@@ -11,6 +11,7 @@
             flex-flow: row wrap;
             justify-content: center;
             gap: 20px;
+            margin-bottom: 20px;
     
             .main-card{
                 width: 200px;
@@ -18,7 +19,7 @@
             }
 
             .secondary-card{
-                width: 175px;
+                width: 200px;
                 height: 150px;
             }
         }

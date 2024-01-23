@@ -20,6 +20,7 @@ html {
 body{
     margin: 0;   
     font-family: 'Poppins';
+    background-color: var(--backgroundPrimary);
     color: var(--colorPrimary);
 }
 
@@ -37,6 +38,10 @@ h3{
 p{
     font-size: 1.5rem;
     text-align: justify;
+
+    span {
+        color: var(--colorAccent);
+    }
 }
 
 .container{
