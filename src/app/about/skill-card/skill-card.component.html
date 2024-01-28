@@ -1,10 +1,10 @@
 <div class="skill-card" (click)="openLink()">
-    <h3 class="name" *ngIf="this.name != 'Alura'">{{this.name}}</h3>
-    <h3 class="time" *ngIf="this.name != 'Alura'">{{this.time}}</h3>
+    <h3 class="name" *ngIf="this.skill.name != 'Alura'">{{this.skill.name}}</h3>
+    <h3 class="time" *ngIf="this.skill.name != 'Alura'">{{this.skill.time}}</h3>
     <img id="image"
-        src="assets/skills/{{this.img}}"
-        alt="{{this.name}} Logo" 
+        src="assets/skills/{{this.skill.img}}"
+        alt="{{this.skill.name}} Logo" 
     img/>
-    <span *ngIf="this.name == 'Alura'">Check out my courses!</span>
+    <span *ngIf="this.skill.name == 'Alura'">Check out my courses!</span>
     
 </div>
