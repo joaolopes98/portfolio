@@ -13,21 +13,10 @@
         <div class="skills">
             <h3>My Skills</h3>
             <div class="container-skills">
-                <app-skill-card class="main-card" name='Java'/>
-                <app-skill-card class="main-card" name='Spring'/>
-                <app-skill-card class="main-card" name='Angular'/>
-                
+                <app-skill-card class="main-card" *ngFor="let skill of primarySkills" [skill]=skill/>
             </div>
             <div class="container-skills">
-                <app-skill-card class="secondary-card" name='Alura'/>
-                <app-skill-card class="secondary-card" name='HTML/CSS'/>
-                <app-skill-card class="secondary-card" name='Git'/>
-                <app-skill-card class="secondary-card" name='Git Flow'/>
-                <app-skill-card class="secondary-card" name='Postgres'/>
-                <app-skill-card class="secondary-card" name='Liquibase'/>
-                <app-skill-card class="secondary-card" name='Flyway'/>
-                <app-skill-card class="secondary-card" name='Hibernate'/>
-                <app-skill-card class="secondary-card" name='JavaFx'/>
+                <app-skill-card class="secondary-card" *ngFor="let skill of secondarySkills" [skill]=skill/>
             </div>
         </div>
     </div>
