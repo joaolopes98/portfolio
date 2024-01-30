@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AboutComponent } from './about.component';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { AboutService } from './about.service';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,9 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
   ],
   exports: [
     AboutComponent
+  ],
+  providers: [
+    AboutService
   ]
 })
 export class AboutModule { }
