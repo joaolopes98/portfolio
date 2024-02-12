@@ -1,4 +1,4 @@
-import { Skill } from './../../models/interfaces/skill.interface';
+import { Skill } from '../../models/interfaces/skill';
 import { Injectable } from '@angular/core';
 
 @Injectable()

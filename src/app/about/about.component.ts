@@ -1,7 +1,7 @@
 import { AboutService } from './about.service';
 import { Component } from '@angular/core';
 
-import { Skill } from 'src/models/interfaces/skill.interface';
+import { Skill } from 'src/models/interfaces/skill';
 
 @Component({
   selector: 'app-about',
