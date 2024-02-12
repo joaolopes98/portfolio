@@ -1,0 +1,18 @@
+.portfolio{
+    background-color: var(--backgroundSecondary);
+    min-height: 100vh;
+    
+    .container-projects{
+        margin-top: 15px;
+
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .project-card{
+            background-color: blue;
+            width: 33%;
+            height: calc(14vw + 160px);
+        }
+    }
+}
