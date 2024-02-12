@@ -10,9 +10,13 @@
         gap: 10px;
 
         .project-card{
-            background-color: blue;
             width: 33%;
             height: calc(14vw + 160px);
+
+            display: flex;
+            flex-wrap: column nowrap;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
