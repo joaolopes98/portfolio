@@ -2,9 +2,9 @@
     <div class="container">
         <h2>Portfolio</h2>
         <div class="container-projects">
-            <app-project-card class="project-card" [style.background]="'blue'"></app-project-card>
-            <app-project-card class="project-card" [style.background]="'yellow'"></app-project-card>
-            <app-project-card class="project-card" [style.background]="'red'"></app-project-card>
+            <app-project-card *ngFor="let project of projects" class="project-card" 
+            style.background-image="url('assets/projects/{{project.background}}')"
+            [project]=project/>
         </div>
      </div>    
  </div>

@@ -7,16 +7,14 @@
 
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
 
         .project-card{
             width: 33%;
-            height: calc(14vw + 160px);
+            height: calc(10vw + 250px);
 
-            display: flex;
-            flex-wrap: column nowrap;
-            justify-content: center;
-            align-items: center;
+            background-size: 100% 100%;
+            background-position: center; 
         }
     }
 }
