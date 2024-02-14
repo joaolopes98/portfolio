@@ -1,7 +1,7 @@
 import { AboutService } from './about.service';
 import { Component } from '@angular/core';
 
-import { Skill } from 'src/models/interfaces/skill.interface';
+import { Skill } from 'src/models/interfaces/skill';
 
 @Component({
   selector: 'app-about',
@@ -10,8 +10,8 @@ import { Skill } from 'src/models/interfaces/skill.interface';
 })
 export class AboutComponent {
 
-  primarySkills: Skill[] = [];
-  secondarySkills: Skill[] = [];
+  primarySkills: Skill[];
+  secondarySkills: Skill[];
 
   constructor(private aboutService: AboutService) {
     this.primarySkills = aboutService.getPrimarySkills();
