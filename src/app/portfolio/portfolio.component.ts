@@ -11,7 +11,7 @@ export class PortfolioComponent {
   projects: Project[] = [
     {
       title: "Portfolio",
-      description: "My first project using Angular, designed to showcase my work.",
+      description: "My first project using Angular, designed to showcase my projects.",
       link: "https://github.com/joaolopes98/portfolio",
       background: "me.jpeg"
     },
@@ -22,10 +22,10 @@ export class PortfolioComponent {
       background: "domus.png"
     },
     {
-      title: "Portfolio",
-      description: "My first project using Angular, designed to showcase my work.",
-      link: "https://joaolopes98.github.io/portfolio/",
-      background: "portfolio.png"
+      title: "Stay Tuned",
+      description: "Next projects coming soon.",
+      link: undefined,
+      background: "soon.JPG"
     }
   ];
   
