@@ -10,8 +10,8 @@ import { Skill } from 'src/models/interfaces/skill';
 })
 export class AboutComponent {
 
-  primarySkills: Skill[] = [];
-  secondarySkills: Skill[] = [];
+  primarySkills: Skill[];
+  secondarySkills: Skill[];
 
   constructor(private aboutService: AboutService) {
     this.primarySkills = aboutService.getPrimarySkills();

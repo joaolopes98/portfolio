@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioComponent } from './portfolio.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { PortfolioService } from './portfolio.service';
 
 
 
@@ -15,6 +16,9 @@ import { ProjectCardComponent } from './project-card/project-card.component';
   ],
   exports:[
     PortfolioComponent
+  ],
+  providers:[
+    PortfolioService
   ]
 })
 export class PortfolioModule { }
