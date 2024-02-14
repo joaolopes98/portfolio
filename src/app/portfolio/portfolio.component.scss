@@ -32,6 +32,12 @@
             color: var(--backgroundPrimary);
             text-decoration: none;
             text-align: center;
+
+            transition: 0.5s;
+
+            &:hover{
+                background-color: var(--colorAccentSecundary);
+            }
         }
     }
 }
