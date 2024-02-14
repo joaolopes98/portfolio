@@ -31,20 +31,27 @@
         p{
             margin: 0;
             font-size: 2rem;
+            font-weight: 200;
             color: var(--colorPrimary);
         }
 
         a{
-            background-color: transparent;
+            background-color: var(--colorAccent);
             border: 5px solid var(--colorAccent);
             padding: 10px;
             border-radius: 5px;
 
             font-weight: 600;
             font-size: 2rem;
-            color: var(--colorAccent);
+            color: var(--backgroundPrimary);
             text-decoration: none;
             text-align: center;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: transparent;
+                color: var(--colorAccent);
+            }
         }
     }
 

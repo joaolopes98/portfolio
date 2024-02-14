@@ -1,6 +1,14 @@
 .about{
     background-color: var(--backgroundSecondary);
 
+    p{
+        font-weight: 200;
+
+        span{
+            font-weight: 400;
+        }
+    }
+
     .skills{
         display: flex;
         flex-direction: column;
