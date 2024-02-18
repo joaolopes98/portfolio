@@ -7,6 +7,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutModule } from './about/about.module';
 import { PortfolioModule } from './portfolio/portfolio.module';
+import { ExperienceModule } from './experience/experience.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     BrowserModule,
     AppRoutingModule,
     AboutModule,
-    PortfolioModule
+    PortfolioModule,
+    ExperienceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
