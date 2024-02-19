@@ -22,7 +22,7 @@ export class ExperienceService {
         company: 'School Picture',
         startDate: 'Apr 2023',
         endDate: '-',
-        description: 'Responsible for creating new features and maintaining a system that registers and displays books created by students from our client schools. I received the first opportunity to work as a full-stack developer, using Java (Spring Boot) on the back-end and AngularJS on the front-end. Gained experience with the AWS environment, creating Lambdas and integrating with SQS (Messaging).'
+        description: 'Responsible for creating new features and maintaining a system that registers and renders books created by students from our client schools. I received the first opportunity to work as a full-stack developer, using Java (Spring Boot) on the back-end and AngularJS on the front-end. Gained experience with the AWS environment, creating Lambdas and integrating with SQS (Messaging).'
       }
       
     ]
