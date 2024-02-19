@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExperienceComponent } from './experience.component';
 import { JobComponent } from './job/job.component';
+import { ExperienceService } from './experience.service';
 
 
 
@@ -14,6 +15,9 @@ import { JobComponent } from './job/job.component';
     CommonModule
   ], exports: [
     ExperienceComponent
+  ],
+  providers:[
+    ExperienceService
   ]
 })
 export class ExperienceModule { }
