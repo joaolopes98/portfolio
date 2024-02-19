@@ -1,3 +1,30 @@
 .experience {
     background-color: var(--backgroundTertiary);
+
+    .jobs{
+        margin-top: 20px;
+    }
+
+    .link{
+        display: flex;
+        justify-content: center;
+
+        a{
+            background-color: var(--colorAccent);
+            padding: 10px 20px;
+            border-radius: 5px;
+    
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: var(--backgroundPrimary);
+            text-decoration: none;
+            text-align: center;
+
+            transition: 0.5s;
+
+            &:hover{
+                background-color: var(--colorAccentSecundary);
+            }
+        }
+    }
 }
