@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutModule } from './about/about.module';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { ExperienceModule } from './experience/experience.module';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
