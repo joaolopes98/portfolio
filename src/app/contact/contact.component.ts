@@ -20,7 +20,7 @@ export class ContactComponent {
       {
         icon: 'matLocalPhoneOutline',
         title: '+55 (12) 991922-2265',
-        link: undefined,
+        link: '#contact',
       },{
         icon: 'matLocationOnOutline',
         title: 'Taubaté/SP - Brazil',

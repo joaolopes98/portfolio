@@ -1,4 +1,4 @@
-<a class="card" [href]="contact.link" target="_blank">
+<a class="card" [href]="contact.link" target="{{contact.link}} != '#contact' ?  _blank : _self">
     <ng-icon [name]="contact.icon"></ng-icon>
     <span>{{contact.title}}</span>
 </a>
