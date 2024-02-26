@@ -1,0 +1,66 @@
+.contact{
+    position: relative;
+    background-color: var(--backgroundSecondary);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-contact{
+        position: relative;
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 50vh;
+    
+        background-color: var(--backgroundTertiary);
+
+        .container-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 800px;
+        }
+
+        .yellow{
+            position:absolute;
+            border-radius: 5px;
+            background-color: var(--colorAccent);
+            width: 40%;
+            height: 3px;
+        }
+
+        .top{
+            top: -3px;
+        }
+
+        .bottom{
+            bottom: -3px;
+        }
+
+        .right{
+            right: 0;
+        }
+
+        .left{
+            left: 0;
+        }
+
+        .text-contact{
+            height: 50px;
+            position: absolute;
+            top: -25px;
+
+        }
+    }
+
+    .quote{
+        position: absolute;
+        bottom: 40px;
+    }
+}
