@@ -10,6 +10,12 @@ MIT
 @angular/router
 MIT
 
+@ng-icons/core
+MIT
+
+@ng-icons/material-icons
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
