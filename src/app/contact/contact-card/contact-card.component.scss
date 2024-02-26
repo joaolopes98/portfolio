@@ -1,0 +1,24 @@
+.card{
+    position: relative;
+    display: flex;
+    
+    height: 70px;
+    width: 350px;
+
+    border-radius: 5px;
+    background-color: var(--backgroundSecondary);
+
+    text-align: center;
+    font-size: 2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    
+    ng-icon{
+        position: absolute;
+        font-size: 3rem;
+        left: 20px;
+    }
+}

@@ -8,21 +8,21 @@ import { HomeComponent } from './home/home.component';
 import { AboutModule } from './about/about.module';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { ExperienceModule } from './experience/experience.module';
-import { ContactComponent } from './contact/contact.component';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     HomeComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AboutModule,
     PortfolioModule,
-    ExperienceModule
+    ExperienceModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]
