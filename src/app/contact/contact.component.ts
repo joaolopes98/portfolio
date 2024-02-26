@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Contact } from 'src/models/interfaces/contact';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,22 +11,7 @@ export class ContactComponent {
 
   contacts: Contact[];
 
-  constructor() {
-    this.contacts = [
-      {
-        icon: 'matEmailOutline',
-        title: 'joaopalosi@gmail.com',
-        link: 'mailto:joaopalosi@gmail.com'
-      },
-      {
-        icon: 'matLocalPhoneOutline',
-        title: '+55 (12) 991922-2265',
-        link: '#contact',
-      },{
-        icon: 'matLocationOnOutline',
-        title: 'Taubaté/SP - Brazil',
-        link: 'https://www.google.com/maps/place/Taubat%C3%A9+-+SP'
-      }
-    ];
+  constructor(private contactService: ContactService) {
+    this.contacts = contactService.getContacts();
   }
 }
