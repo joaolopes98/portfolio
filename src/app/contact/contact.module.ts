@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
 import { NgIconsModule } from '@ng-icons/core';
-import { matLocationOnOutline } from '@ng-icons/material-icons/outline';
+import { matEmailOutline, matLocalPhoneOutline, matLocationOnOutline } from '@ng-icons/material-icons/outline';
 
 
 
@@ -14,7 +14,7 @@ import { matLocationOnOutline } from '@ng-icons/material-icons/outline';
   ],
   imports: [
     CommonModule,
-    NgIconsModule.withIcons({ matLocationOnOutline })
+    NgIconsModule.withIcons({ matEmailOutline, matLocalPhoneOutline, matLocationOnOutline,  })
   ],
   exports: [
     ContactComponent

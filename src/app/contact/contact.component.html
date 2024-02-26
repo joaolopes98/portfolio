@@ -4,13 +4,11 @@
         <h2 class="text-contact">Contact Me</h2>
         <div class="yellow top right"></div>
         <div class="container-cards">
-            <app-contact-card/>
-            <app-contact-card/>   
-            <app-contact-card/>    
+            <app-contact-card *ngFor="let contact of contacts" [contact]="contact"/>   
         </div>
         <div class="yellow bottom left"></div>
         <div></div>
         <div class="yellow bottom right"></div>
     </div>
-    <h4 class="quote">"If you want something you never had, you have to do something you've never done."</h4>
+    <h4 class="quote">If you want something you never had, you have to do something you've never done.</h4>
 </div>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Contact } from 'src/models/interfaces/contact';
+import { Component, Input } from '@angular/core';
 
 
 
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-card.component.scss']
 })
 export class ContactCardComponent {
+
+  @Input() contact!: Contact;
 
 }

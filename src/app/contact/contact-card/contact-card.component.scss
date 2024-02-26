@@ -9,16 +9,22 @@
     background-color: var(--backgroundSecondary);
 
     text-align: center;
+    color: white;
     font-size: 2rem;
 
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
+    text-decoration: none;
     
     ng-icon{
         position: absolute;
         font-size: 3rem;
         left: 20px;
+        top: 17px;
+    }
+
+    span{
+        color: var(--colorAccent);
     }
 }
