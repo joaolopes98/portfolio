@@ -55,7 +55,15 @@
             height: 50px;
             position: absolute;
             top: -25px;
+        }
 
+        .social-media{
+            display: flex;
+            justify-content: space-around;
+
+            width: 200px;
+            position: absolute;
+            bottom: -15px;
         }
     }
 
