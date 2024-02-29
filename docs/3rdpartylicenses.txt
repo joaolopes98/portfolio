@@ -10,6 +10,9 @@ MIT
 @angular/router
 MIT
 
+@ng-icons/bootstrap-icons
+MIT
+
 @ng-icons/core
 MIT
 
