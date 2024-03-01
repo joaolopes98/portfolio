@@ -4,21 +4,10 @@ import { PortfolioComponent } from './portfolio.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { PortfolioService } from './portfolio.service';
 
-
-
 @NgModule({
-  declarations: [
-    PortfolioComponent,
-    ProjectCardComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports:[
-    PortfolioComponent
-  ],
-  providers:[
-    PortfolioService
-  ]
+  declarations: [PortfolioComponent, ProjectCardComponent],
+  imports: [CommonModule],
+  exports: [PortfolioComponent],
+  providers: [PortfolioService],
 })
-export class PortfolioModule { }
+export class PortfolioModule {}

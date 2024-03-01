@@ -6,10 +6,9 @@ import { Skill } from 'src/models/interfaces/skill';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-
   primarySkills: Skill[];
   secondarySkills: Skill[];
 

@@ -1,71 +1,72 @@
 .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 7%;
+  transition: 0.75s;
+  z-index: 100;
+
+  background-color: var(--backgroundPrimary);
+
+  .logo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    width: 150px;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 50px 7%;
-    transition: 0.75s;
-    z-index: 100;
+    a {
+      opacity: 0;
+      transition: opacity 1s ease-out;
 
-    background-color: var(--backgroundPrimary);
+      font-family: "Kaushan Script";
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: var(--colorAccent);
 
-    .logo {
-        display: flex;
-        justify-content: center;
-        width: 150px;
-    
-        a{
-            opacity: 0;
-            transition: opacity 1s ease-out;
-    
-            font-family: 'Kaushan Script';
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: var(--colorAccent);
-
-            text-decoration: none;
-            pointer-events: none; 
-            cursor: pointer;
-        }
+      text-decoration: none;
+      pointer-events: none;
+      cursor: pointer;
     }
+  }
 
-    .nav-links {
-        display: flex;
-        text-align: center;
-    
-        a{
-            width: 100px;
-            color: var(--colorSecondary);
-            font-size: 1.7rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: 0.5s ;
-            margin: 0px 5px;
-    
-            &:hover, &:active{
-                color: var(--colorPrimary);
-            }
-        }
+  .nav-links {
+    display: flex;
+    text-align: center;
+
+    a {
+      width: 100px;
+      color: var(--colorSecondary);
+      font-size: 1.7rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.5s;
+      margin: 0px 5px;
+
+      &:hover,
+      &:active {
+        color: var(--colorPrimary);
+      }
     }
+  }
 }
 
-.toolbar-scrolled{
-    padding: 15px 2%;
-    background-color: var(--backgroundSecondary);
-    box-shadow: 0 5px 5px var(--shadow);
+.toolbar-scrolled {
+  padding: 15px 2%;
+  background-color: var(--backgroundSecondary);
+  box-shadow: 0 5px 5px var(--shadow);
 
-    .logo a {
-        opacity: 1;
-        pointer-events: all;
-        cursor: pointer;
-    }
+  .logo a {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+  }
 
-    .nav-links a{
-        width: 100px;
-        font-size: 1.5rem;
-    }
+  .nav-links a {
+    width: 100px;
+    font-size: 1.5rem;
+  }
 }
