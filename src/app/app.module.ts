@@ -11,20 +11,16 @@ import { ExperienceModule } from './experience/experience.module';
 import { ContactModule } from './contact/contact.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    HomeComponent,
-  ],
+  declarations: [AppComponent, ToolbarComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AboutModule,
     PortfolioModule,
     ExperienceModule,
-    ContactModule
+    ContactModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

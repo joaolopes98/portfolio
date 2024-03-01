@@ -5,14 +5,12 @@ import { Skill } from 'src/models/interfaces/skill';
 @Component({
   selector: 'app-skill-card',
   templateUrl: './skill-card.component.html',
-  styleUrls: ['./skill-card.component.scss']
+  styleUrls: ['./skill-card.component.scss'],
 })
 export class SkillCardComponent {
-  
   @Input() skill!: Skill;
 
   openLink() {
     window.open(this.skill?.link, '_blank');
   }
-
 }
