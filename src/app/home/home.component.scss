@@ -55,10 +55,60 @@
     }
   }
 
-  img {
-    height: 250px;
-    border-radius: 5px;
-    border: 5px solid var(--colorAccent);
-    box-shadow: 0 5px 20px var(--shadow);
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      height: 250px;
+      border-radius: 5px;
+      border: 5px solid var(--colorAccent);
+      box-shadow: 0 5px 20px var(--shadow);
+    }
+
+    a {
+      display: none;
+      background-color: var(--colorAccent);
+      border: 5px solid var(--colorAccent);
+      padding: 10px;
+      border-radius: 5px;
+
+      font-weight: 600;
+      font-size: 2rem;
+      color: var(--backgroundPrimary);
+      text-decoration: none;
+      text-align: center;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--colorAccent);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 20px;
+
+    .introduction {
+      height: max-content;
+
+      p {
+        text-align: center;
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    .image {
+      a {
+        display: block;
+      }
+    }
   }
 }

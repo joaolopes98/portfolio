@@ -66,5 +66,33 @@
       margin-bottom: 30px;
       color: #c6c5c6;
     }
+
+    span {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    .job-date {
+      display: none;
+    }
+
+    .job-triangle {
+      display: none;
+    }
+
+    .job-elements {
+      display: none;
+    }
+
+    .job-text {
+      h2 {
+        font-size: 2rem;
+      }
+      span {
+        display: block;
+      }
+    }
   }
 }

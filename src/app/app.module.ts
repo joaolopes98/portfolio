@@ -9,6 +9,8 @@ import { AboutModule } from './about/about.module';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { ExperienceModule } from './experience/experience.module';
 import { ContactModule } from './contact/contact.module';
+import { NgIconsModule } from '@ng-icons/core';
+import { heroQueueListSolid, heroXMarkSolid } from '@ng-icons/heroicons/solid';
 
 @NgModule({
   declarations: [AppComponent, ToolbarComponent, HomeComponent],
@@ -19,6 +21,7 @@ import { ContactModule } from './contact/contact.module';
     PortfolioModule,
     ExperienceModule,
     ContactModule,
+    NgIconsModule.withIcons({ heroQueueListSolid, heroXMarkSolid }),
   ],
   providers: [],
   bootstrap: [AppComponent],
