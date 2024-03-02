@@ -16,6 +16,9 @@ MIT
 @ng-icons/core
 MIT
 
+@ng-icons/heroicons
+MIT
+
 @ng-icons/material-icons
 MIT
 
