@@ -7,14 +7,21 @@
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 
     .project-card {
-      width: 33%;
+      flex: 1;
       height: calc(10vw + 250px);
 
       background-size: 100% 100%;
       background-position: center;
+
+      @media screen and (max-width: 1024px) {
+        flex: none;
+        width: 300px;
+        height: 300px;
+      }
     }
   }
 
