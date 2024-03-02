@@ -84,6 +84,8 @@
   }
 
   @media screen and (max-width: 1024px) {
+    height: 100px;
+
     .nav-links {
       display: none;
       z-index: 0;
