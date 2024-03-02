@@ -1,1 +1,3 @@
-<a *ngFor="let social of socialMedias" [href]=social.link><ng-icon [name]=social.icon target="_blank"/></a>
+<a *ngFor="let social of socialMedias" [href]="social.link">
+  <ng-icon [name]="social.icon" target="_blank" />
+</a>

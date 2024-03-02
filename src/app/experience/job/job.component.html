@@ -1,16 +1,17 @@
 <div class="job-container">
-    <div class="job-date">
-        <span>{{job.startDate}}</span>
-        <span>{{job.endDate}}</span>
-    </div>
-    <div class="job-triangle"></div>
-    <div class="job-elements">
-        <div class="job-circle"></div>
-        <div class="job-line"></div>
-    </div>
-    <div class="job-text">
-        <h2>{{job.title}}</h2>
-        <a [href]=job.link target="_blank">{{job.company}}</a>
-        <p>{{job.description}}</p>
-    </div>
+  <div class="job-date">
+    <span>{{ job.startDate }}</span>
+    <span>{{ job.endDate }}</span>
+  </div>
+  <div class="job-triangle"></div>
+  <div class="job-elements">
+    <div class="job-circle"></div>
+    <div class="job-line"></div>
+  </div>
+  <div class="job-text">
+    <h2>{{ job.title }}</h2>
+    <a [href]="job.link" target="_blank">{{ job.company }}</a>
+    <span>{{ job.startDate }} - {{ job.endDate }}</span>
+    <p>{{ job.description }}</p>
+  </div>
 </div>

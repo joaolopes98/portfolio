@@ -1,38 +1,46 @@
-.about{
-    background-color: var(--backgroundSecondary);
+.about {
+  background-color: var(--backgroundSecondary);
 
-    p{
-        font-weight: 200;
+  p {
+    font-weight: 200;
 
-        span{
-            font-weight: 400;
-        }
+    span {
+      font-weight: 400;
     }
+  }
 
-    .skills{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    
-        .container-skills{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-    
-            .main-card{
-                width: 200px;
-                height: 200px;
-            }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-            .secondary-card{
-                width: 200px;
-                height: 150px;
-            }
+    .container-skills {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      .main-card {
+        flex: 1;
+        max-width: 200px;
+        height: 200px;
+
+        @media screen and (max-width: 1024px) {
+          min-width: 150px;
+          height: 150px;
         }
+      }
+
+      .secondary-card {
+        width: 200px;
+        height: 150px;
+
+        @media screen and (max-width: 1024px) {
+          width: 150px;
+          height: 125px;
+        }
+      }
     }
+  }
 }
-
-
-

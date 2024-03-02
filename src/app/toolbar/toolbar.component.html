@@ -1,13 +1,16 @@
 <div id="toolbar" class="toolbar">
-    <div class="logo">
-        <a href="#home">João Lopes</a>
-    </div>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <div class="logo">
-    </div>
+  <div class="logo">
+    <a href="#home" (click)="removeToggle($event)">João Lopes</a>
+  </div>
+  <div class="nav-links">
+    <a href="#about" (click)="toggle($event)">About</a>
+    <a href="#portfolio" (click)="toggle($event)">Portfolio</a>
+    <a href="#experience" (click)="toggle($event)">Experience</a>
+    <a href="#contact" (click)="toggle($event)">Contact</a>
+  </div>
+  <div class="logo">
+    <button class="toggle" (click)="toggle($event)">
+      <ng-icon [name]="toggleIcon" />
+    </button>
+  </div>
 </div>

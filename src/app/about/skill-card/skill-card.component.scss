@@ -1,46 +1,59 @@
-.skill-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    gap: 20px;
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    background-color: var(--backgroundTertiary);
-    border-radius: 10px;
-    
-    transition: 0.5s;
-    cursor: pointer;
+  background-color: var(--backgroundTertiary);
+  border-radius: 10px;
 
-    .time{
-        display: none;
+  transition: 0.5s;
+  cursor: pointer;
+
+  .time {
+    display: none;
+  }
+
+  &:hover {
+    background-color: var(--colorAccent);
+    color: var(--backgroundTertiary);
+
+    .name {
+      display: none;
     }
 
-    &:hover{
-        background-color: var(--colorAccent);
-        color: var(--backgroundTertiary);
-
-        .name{
-            display: none;
-        }
-
-        .time{
-            display: block;
-        }
+    .time {
+      display: block;
     }
-    
+  }
 
-    img{
-        height: 50px;
-        width: 50px;
-    
-        object-fit: contain;
+  img {
+    height: 50px;
+    width: 50px;
+
+    object-fit: contain;
+  }
+
+  span {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 10px;
+
+    h3 {
+      font-size: 2rem;
     }
 
-    span{
-        font-size: 1.4rem;
-        font-weight: bold;
+    img {
+      width: 40px;
+      height: 40px;
     }
+  }
 }

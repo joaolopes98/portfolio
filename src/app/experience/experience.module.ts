@@ -4,20 +4,10 @@ import { ExperienceComponent } from './experience.component';
 import { JobComponent } from './job/job.component';
 import { ExperienceService } from './experience.service';
 
-
-
 @NgModule({
-  declarations: [
-    ExperienceComponent,
-    JobComponent
-  ],
-  imports: [
-    CommonModule
-  ], exports: [
-    ExperienceComponent
-  ],
-  providers:[
-    ExperienceService
-  ]
+  declarations: [ExperienceComponent, JobComponent],
+  imports: [CommonModule],
+  exports: [ExperienceComponent],
+  providers: [ExperienceService],
 })
-export class ExperienceModule { }
+export class ExperienceModule {}
