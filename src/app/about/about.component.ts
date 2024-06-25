@@ -17,7 +17,6 @@ export class AboutComponent {
     loop: true,
     nav: false,
     dots: true,
-    rtl: true,
     lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 2000,
