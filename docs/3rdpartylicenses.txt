@@ -1,3 +1,6 @@
+@angular/animations
+MIT
+
 @angular/common
 MIT
 
@@ -20,6 +23,9 @@ MIT
 MIT
 
 @ng-icons/material-icons
+MIT
+
+ngx-owl-carousel-o
 MIT
 
 rxjs
