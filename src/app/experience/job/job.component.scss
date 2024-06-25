@@ -37,8 +37,8 @@
     align-items: center;
 
     .job-circle {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
 
       margin: 15px;
       background-color: var(--colorAccent);
@@ -73,7 +73,6 @@
   }
 
   @media screen and (max-width: 1024px) {
-    flex-direction: column;
     .job-date {
       display: none;
     }
@@ -83,7 +82,13 @@
     }
 
     .job-elements {
-      display: none;
+      gap: 10px;
+      margin-right: 10px;
+      .job-circle {
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+      }
     }
 
     .job-text {
@@ -92,6 +97,7 @@
       }
       span {
         display: block;
+        font-size: 1.2rem;
       }
     }
   }

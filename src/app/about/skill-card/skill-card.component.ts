@@ -11,6 +11,8 @@ export class SkillCardComponent {
   @Input() skill!: Skill;
 
   openLink() {
-    window.open(this.skill?.link, '_blank');
+    if (this.skill.name === 'Alura') {
+      window.open(this.skill?.link, '_blank');
+    }
   }
 }
