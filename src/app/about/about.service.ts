@@ -25,17 +25,17 @@ export class AboutService {
         img: 'angular.png',
         time: '1 year',
       },
-    ];
-  }
-
-  getSecondarySkills(): Skill[] {
-    return [
       {
         name: 'Alura',
         link: 'https://cursos.alura.com.br/user/joaolopes98/fullCertificate/86df9416e43345cfaf9224bcfb8f116c',
         img: 'alura.jpeg',
         time: '',
       },
+    ];
+  }
+
+  getSecondarySkills(): Skill[] {
+    return [
       {
         name: 'HTML/CSS',
         link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',

@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200;400;600&display=swap");
 
+/* ngx Owl Carousel */
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
 :root {
   --backgroundPrimary: #34353a;
   --backgroundSecondary: #31333b;
@@ -60,4 +64,9 @@ p {
   padding: 80px 5% 40px;
   max-width: 1368px;
   min-height: 80vh;
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
 }
