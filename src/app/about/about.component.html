@@ -16,7 +16,7 @@
       </p>
     </div>
     <div class="skills">
-      <h3>My Skills</h3>
+      <h3>Main Skills</h3>
       <div class="container-skills">
         <app-skill-card
           class="main-card"
@@ -24,13 +24,14 @@
           [skill]="skill"
         />
       </div>
-      <div class="container-skills">
-        <app-skill-card
-          class="secondary-card"
-          *ngFor="let skill of secondarySkills"
-          [skill]="skill"
-        />
-      </div>
+      <h4>Secundary Skills</h4>
+      <owl-carousel-o [options]="carouselOptions">
+        <ng-container *ngFor="let skill of secondarySkills">
+          <ng-template carouselSlide [id]="skill.time">
+            <app-skill-card class="secondary-card" [skill]="skill" />
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
     </div>
   </div>
 </div>
