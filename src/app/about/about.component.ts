@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 import { Skill } from 'src/models/interfaces/skill';
+import { DateUtilsService } from '../shared/date-utils.service';
 
 @Component({
   selector: 'app-about',
@@ -10,6 +11,9 @@ import { Skill } from 'src/models/interfaces/skill';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
+  age: number;
+  yearsOfExperience: number;
+
   primarySkills: Skill[];
   secondarySkills: Skill[];
 
@@ -49,8 +53,16 @@ export class AboutComponent {
     },
   };
 
-  constructor(private aboutService: AboutService) {
+  constructor(
+    private aboutService: AboutService,
+    private dateUtils: DateUtilsService
+  ) {
     this.primarySkills = aboutService.getPrimarySkills();
     this.secondarySkills = aboutService.getSecondarySkills();
+
+    this.age = this.dateUtils.calculateYearsSince(new Date(1998, 5, 27));
+    this.yearsOfExperience = this.dateUtils.calculateYearsSince(
+      new Date(2017, 11, 1)
+    );
   }
 }
