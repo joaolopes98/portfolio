@@ -23,7 +23,7 @@
       <h4>Secundary Skills</h4>
       <owl-carousel-o [options]="carouselOptions">
         <ng-container *ngFor="let skill of secondarySkills">
-          <ng-template carouselSlide [id]="skill.time">
+          <ng-template carouselSlide [id]="skill.name">
             <app-skill-card class="secondary-card" [skill]="skill" />
           </ng-template>
         </ng-container>
